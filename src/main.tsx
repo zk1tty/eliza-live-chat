@@ -7,14 +7,16 @@ import { SimliClient } from './SimliClient'
 
 const sk = import.meta.env.VITE_SIMLI_API_KEY
 const e11 = import.meta.env.VITE_ELEVENLABS_API_KEY
-
 const completionEndpoint = import.meta.env?.VITE_COMPLETION_ENDPOINT || 'http://localhost:3000'
+const AGENT_ID = import.meta.env.VITE_ELIZA_AGENT_ID
+const SIMLI_FACE_ID = import.meta.env.VITE_SIMLI_FACE_ID
+const ELEVENLABS_VOICE_ID = import.meta.env.VITE_ELEVENLABS_VOICE_ID
 
 import './styles.css'
 
-const AGENT_ID = 'ruby' // this comes from the agentId output from running the Eliza framework, it likely will be in uuid format, i.e. '123e4567-e89b-12d3-a456-426614174000'
-const SIMLI_FACE_ID = '13fbb3e1-4489-4199-ad57-91be4a2dd38b'
-const ELEVENLABS_VOICE_ID = '21m00Tcm4TlvDq8ikWAM'
+// const AGENT_ID = 'cac13f59-ece4-0f3a-9768-b2a7aa7ffce9' // this comes from the agentId output from running the Eliza framework, it likely will be in uuid format, i.e. '123e4567-e89b-12d3-a456-426614174000'
+// const SIMLI_FACE_ID = 'd2a27ba9-bd23-4e0b-88d2-499d771b81a6'
+// const ELEVENLABS_VOICE_ID = '21m00Tcm4TlvDq8ikWAM'
 
 const simliClient = new SimliClient()
 
@@ -64,6 +66,8 @@ const App = () => {
         videoRef: videoRef,
         audioRef: audioRef,
       }
+
+      console.log('SimliConfig', SimliConfig)
 
       simliClient.Initialize(SimliConfig)
       console.log('Simli Client initialized')

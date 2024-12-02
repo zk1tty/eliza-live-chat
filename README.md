@@ -17,6 +17,8 @@ Live video avatar chat application. Connects to an Eliza instance running the "D
 - `VITE_OPENAI_API_KEY`
 - `VITE_SIMLI_API_KEY`
 - `VITE_ELEVENLABS_API_KEY`
+- `VITE_SIMLI_FACE_ID`
+- `VITE_ELEVENLABS_VOICE_ID`
 
 ## Options
 
