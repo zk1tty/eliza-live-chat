@@ -1,6 +1,6 @@
-# LiveChat
+# LiveChat with Eliza
 
-<img width="1312" alt="Screenshot 2024-10-25 at 2 13 24 AM" src="https://github.com/user-attachments/assets/308da890-a7b7-4b5f-8bb8-b295d26a6ec5">
+<img width="540" alt="Screenshot 2567-12-03 at 00 22 17" src="https://github.com/user-attachments/assets/e6119dd5-377e-41e3-937c-8ecd28082827">
 
 Live video avatar chat application. Connects to an Eliza instance running the "Direct" client. Requires a Simli AI Open AI, and ElevenLabs API key.
 
